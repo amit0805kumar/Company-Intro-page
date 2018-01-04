@@ -1,4 +1,23 @@
-
+ @font-face
+    {
+            font-family:neolatina;
+            src:url(fonts/neo-latina-demo-FFP.ttf);
+    }
+ @media(max-width: 497px)
+        {
+            .myh1{
+                
+                font-size: 20px
+            } 
+        }
+        
+        @media(min-width: 487px)
+        {
+            .myh1{
+            
+                font-size: 60px
+            } 
+        }
 #header
 {
     background: #212121;
@@ -18,4 +37,13 @@
 {
     width: 130px;
     height: 120px;
+    display: inline;
+}
+#heading
+{
+    
+    font-family: neolatina;
+    
+    display: inline-block;
+    white-space: nowrap;
 }
