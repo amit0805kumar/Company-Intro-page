@@ -9,8 +9,10 @@
     <script src="https://use.fontawesome.com/ff32409344.js"></script>
 
       <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style.css">
-  
+  <script src="jquery-3.2.1.js"></script>
+
     <script src="script.js"></script>
    
 </head>
@@ -39,9 +41,9 @@
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav" >
                 <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#serv">SERVICES</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
                  <!--Dropdown menu-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR PRODUCTS<span class="caret"></span></a>
@@ -53,29 +55,38 @@
                     </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">LOGIN</a></li>
+                    <li style="margin: 7px;"><a href="#" style="border: 1px solid white; border-radius: 40px; padding: 5px;">LOGIN</a></li>
                 </ul>
         </div>
     </div>
 </nav> 
+     <!--ADD-->
+  <div class="ad" style="opacity: 0;"></div>
+    <script>
+    var divs = $('.ad');
+$(window).on('scroll', function() {
+   var st = $(this).scrollTop();
+   divs.css({ 'opacity' : (0 + st/700) });
+});
+    </script>
     <!--Slider-->
     
      <div class="container" style="width: 100%; margin-top: -20px;">
     <div id="slides">
-      <img src="img/1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-      <img src="img/2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-      <img src="img/3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-      <img src="img/4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="img/1.jpg" alt="">
+      <img src="img/2.jpg" alt="">
+      <img src="img/3.jpg" alt="">
+      <img src="img/4.jpg" alt="">
     </div>
   </div>
     
  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
  <script src="js/jquery.slides.min.js"></script>
-    <!--ADD-->
-     <div id="adder" style=" background-size: auto;"><div id="ad"></div></div>
+    
+   
     
     
-<div class="container">
+<div class="container" id="about">
     <h1 class="headers">ABOUT US</h1>
     <p class="content">
         H.R. Group of Institutions was established in the year 2005 by the visionary technocrat Er. Anil Agarwal. Initially it started with HR Institute of Technology in 2005 with B.Tech in EC, CS, ME & EEE. Soon after institutes of Pharmacy, Hotel Management and Management were opened in the years 2006-2008 for B.Pharm, BHMCT and PGDM & MBA courses respectively. A new Engg. College in the name of HR Institute of Engg. & Technology was set up in the year 2010. Today the group can boast of more than 2500 students and 200 faculty members.<br>
@@ -83,7 +94,7 @@
     </p>
 </div>
     <hr>
-<div class="container">
+<div class="container" id="serv">
     <h1 class="headers">
     OUR SERVICES
     </h1>
@@ -99,12 +110,12 @@
     <h1 class="headers">
 CONTACT US
     </h1>
-    <div class="container-fluid" style="background: #696969; padding: 5px; color: white;">
+    <div class="container-fluid" style="background: #696969; padding: 5px; color: white;" id="contact">
         
         <div class="row">
             <div class="col-md-5">
                   <h1>FEEDBACK</h1>
-                <p>YOUR FEEDBACK IS IMPORTANT FOR US</p>
+                <p style="">YOUR FEEDBACK IS IMPORTANT FOR US</p>
                 <div class="form-group">
                <textarea class="form-control" rows="3" placeholder="#feedback"> </textarea>
                     
@@ -119,7 +130,7 @@ CONTACT US
             <div class="col-md-1"><div style="background: black;" class="divider"></div></div>
             
             <div class="col-md-6">
-            <h1 style="">GET IN TOUCH</h1><br> 
+            <h1>GET IN TOUCH</h1><br> 
                 <h4 class="myh2">L-297,SECTOR-23,SANJAY NAGAR,GHAZIABAD-201002</h4><br>
                 <h4 class="myh2">PHONE NO.&nbsp;-&nbsp;9999999999</h4>
                 <h4 class="myh2">EMAIL&nbsp; -&nbsp;amit0805kumar@gmail.com</h4>
@@ -130,13 +141,13 @@ CONTACT US
     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d224321.80311688728!2d76.9863793414873!3d28.53887287505997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srajiv+chowk!5e0!3m2!1sen!2sin!4v1515139692863" width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
     <div class="container-fluid" id="footer">
         <button type="button" class="btn-success btn-lg" id="up">UP</button>
-        <div style="display: inline-block">POWERED BY SPARROW CORP</div>
+        <div style="display: inline-block; font-family: neolatina;">POWERED BY SPARROW <span style="color:#757575; ">CORPORATION</span></div>
         <div class="container-fluid foot" id="footicon">
             <a href="#"><i class="fa fa-facebook-square fa-2x face" aria-hidden="true" ></i></a>
             <a href="#"><i class="fa fa-instagram fa-2x face" aria-hidden="true"></i></a>
             <a href="#" ><i class="fa fa-twitter-square fa-2x face" aria-hidden="true"></i></a>
         </div>
     </div>
-   
+
 </body>
 </html>
