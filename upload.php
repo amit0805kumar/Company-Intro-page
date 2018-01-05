@@ -50,5 +50,5 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-header( "refresh:0;url=index.html" );
+
 ?>
