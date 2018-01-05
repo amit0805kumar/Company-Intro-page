@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=width-device initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    function getFile(filePath) {
+        return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
+    }
+
+
+    </script>
+    <style>
+    @media(max-width: 600px)
+        {
+            .mh
+            {
+                font-size: 20px;
+            }
+            .con
+            {
+                width: 200px; height: 300px; padding: 2px;  margin-left: 80px;
+            }
+            #in
+            {
+                width: 150px;
+            }
+        }
+        
+        @media(min-width: 487px)
+        {
+          .mh
+            {
+                font-size: 40px;
+            }    
+            .con
+            {
+                padding: 20px;
+                width: 500px; height: 500px;   margin-left: 430px;
+            }
+            #in
+            {
+                width: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" class="mh">ADMIN PANEL</h1>
+    
+    <div style=" display: block; border: 5px solid black; " class="con">
+         <div class="container">
+        
+ <form action="upload.php" style="" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label>Upload Image:</label>
+    <input type="file" name="fileToUpload" accept="image/*" class="form-control" id="in" >
+  </div> 
+  <button type="submit" class="btn btn-success">UPLOAD</button>  
+   <div style="width: 200; height: 200px; background-size: cover;" id="ads">
+    </div>
+</form>
+        </div>
+    </div>
+</body>
+</html>
