@@ -8,6 +8,16 @@
             font-family:orbitron;
             src:url(fonts/Orbitron-Black.ttf);
     }
+@font-face
+    {
+            font-family:quicksand;
+            src:url(fonts/Quicksand-Regular.ttf);
+    }
+@font-face
+    {
+            font-family:ptsans;
+            src:url(fonts/PT_Sans-Web-Regular.ttf);
+    }
  @media(max-width: 600px)
         {
             .myh1{
@@ -34,7 +44,7 @@
                  height: 80px;
                 
             }
-            #ad
+            .ad
             {
                 top:582px;
                 left:220px;
@@ -49,7 +59,7 @@
             {
                  height: 60px;
             }
-              #ad
+              .ad
             {
                 top:430px;
                 left:1100px; 
@@ -113,9 +123,6 @@ body
 
    
 
-    #slides {
-      display: none
-    }
 
     #slides .slidesjs-navigation {
       margin-top:5px;
@@ -213,7 +220,7 @@ body
     }
 
    
-  </style>
+ 
   <!-- End SlidesJS Optional-->
 
   <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
@@ -260,25 +267,34 @@ body
 .headers
 {
     text-align: center;
-    text-decoration: underline;
+ 
+    font-family: ptsans;
+    letter-spacing: 3px;
 }
 .content
 {
     text-align: center;
     font-size: 20px;
+    color: #696969;
+    
+    font-family: quicksand;
 }
-
+.myh2
+{
+    font-family: quicksand;
+}
 #footer
 {
    
     background: #212121;
    color: white;
-    padding: 5px;   
+    padding: 5px; 
+    
 }
 #up
 {
     border: none;
-    border-radius: 40px;
+    border-radius: 80px;
 
 }
 #footicon
@@ -286,7 +302,7 @@ body
     display: inline-block;
     
 }
-#ad
+.ad
 {
    
     background: #F0E68C;
@@ -294,5 +310,5 @@ body
     position: fixed;
     z-index: 1;
     background-size: cover;
-    border: 4px solid #f44336;
+    border: 4px solid #7CB342;
 }
