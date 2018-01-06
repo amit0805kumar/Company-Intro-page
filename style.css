@@ -46,8 +46,8 @@
             }
             .ad
             {
-                top:582px;
-                left:220px;
+                margin-left: 61%;
+                margin-top: 70%;
                  width: 150px;
                 height: 100px;
             }
@@ -65,8 +65,8 @@
             }
               .ad
             {
-                top:430px;
-                left:1100px; 
+                margin-left:  81%;
+                margin-top: 14%;
                  width: 250px;
                 height: 200px;
             }
@@ -117,7 +117,7 @@ body
 {
     width: 130px;
     height: 120px;
-    display: inline;
+    display: inline-block;
 }
 #heading
 {
@@ -309,5 +309,5 @@ body
 #footicon
 {
     display: inline-block;
-    
+ 
 }
