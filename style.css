@@ -311,13 +311,3 @@ body
     display: inline-block;
     
 }
-.ad
-{
-   
-    background: #F0E68C;
-    background: url(uploads/adImg.jpg);
-    position: fixed;
-    z-index: 1;
-    background-size: cover;
-    border: 4px solid #7CB342;
-}
