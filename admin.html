@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="animate.css">
+	<script src="scrolla.jquery.min.js"></script>
     <script>
     function getFile(filePath) {
         return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
@@ -51,7 +53,7 @@
 <body>
     <h1 style="text-align: center;" class="mh">ADMIN PANEL</h1>
     
-    <div style=" display: block; border: 5px solid black; " class="con">
+    <div style=" display: block; border: 5px solid black; " class="con animate" data-animate="bounceIn" data-duration="1.0s" data-delay="0.2s">
          <div class="container">
         
  <form action="upload.php" style="" method="post" enctype="multipart/form-data">
@@ -60,10 +62,18 @@
     <input type="file" name="fileToUpload" accept="image/*" class="form-control" id="in" >
   </div> 
   <button type="submit" class="btn btn-success">UPLOAD</button>  
-   <div style="width: 200; height: 200px; background-size: cover;" id="ads">
-    </div>
+   
 </form>
         </div>
     </div>
+    
+        <script>
+		
+	$('.animate').scrolla({
+		mobile: false,
+		once: false
+	});
+
+	</script>
 </body>
 </html>
