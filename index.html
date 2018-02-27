@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=width-device initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,55 +13,55 @@
     <script src="jquery-3.2.1.js"></script>
     <script src="script.js"></script>
     <style>
-        .ad
-{
-   
-    background: #F0E68C;
-    background: url(uploads/ads.jpg);
-    position: fixed;
-    z-index: 1;
-    background-size: cover;
-    border: 4px solid #7CB342;
-}
-    .sticky 
-{
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+        .ad {
+
+            background: #F0E68C;
+            background: url(uploads/ads.jpg);
+            position: fixed;
+            z-index: 1;
+            background-size: cover;
+            border: 4px solid #7CB342;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
     </style>
     <title>Sparrow-Corporation</title>
 </head>
+
 <body>
-<!--Header-->
-<div class="container" id="header">
-    <a href="#"><i class="fa fa-facebook-square fa-2x face" aria-hidden="true" ></i></a>
-    <a href="#"><i class="fa fa-instagram fa-2x face" aria-hidden="true"></i></a>
-    <a href="#" ><i class="fa fa-twitter-square fa-2x face" aria-hidden="true"></i></a>
-</div>
-    
-<!--LOGO-->
+    <!--Header-->
+    <div class="container" id="header">
+        <a href="#"><i class="fa fa-facebook-square fa-2x face" aria-hidden="true" ></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x face" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter-square fa-2x face" aria-hidden="true"></i></a>
+    </div>
+
+    <!--LOGO-->
     <div class="container-fluid">
         <img src="sparrowIcon.png" class="img-responsive" id="logo">
         <h1 id="heading" class="myh1">SPARROW <span style="color: #757575;">CORPORATION</span></h1>
     </div>
-    
-<!--Nav Bar-->
-    
-<nav class="navbar navbar-inverse" role="navigation" id="navbar" style="z-index: 1;">
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainNavBar">
+
+    <!--Nav Bar-->
+
+    <nav class="navbar navbar-inverse" role="navigation" id="navbar" style="z-index: 1;">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainNavBar">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     </button>
-    <div class="container-fluid">  
-        <div class="collapse navbar-collapse" id="mainNavBar">
-            <ul class="nav navbar-nav" >
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#serv">SERVICES</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-                 <!--Dropdown menu-->
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#serv">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                    <!--Dropdown menu-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR PRODUCTS<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -70,30 +70,31 @@
                             <li><a href="#">Galactic</a></li>
                         </ul>
                     </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li style="margin: 7px;"><a href="#" style="border: 1px solid white; border-radius: 40px; padding: 5px;">LOGIN</a></li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav> 
-    
- <!--ADD-->
-  <div class="ad" style="opacity: 0;"></div>
- 
+    </nav>
+
+    <!--ADD-->
+    <div class="ad" style="opacity: 0;"></div>
+
     <script>
-    var divs = $('.ad');
-    $(window).on('scroll', function()
-    {
-   var st = $(this).scrollTop();
-   divs.css({ 'opacity' : (0 + st/700) });
-    });
+        var divs = $('.ad');
+        $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            divs.css({
+                'opacity': (0 + st / 700)
+            });
+        });
     </script>
-    
-    
+
+
     <!--Slider-->
-    
-     <div class="container" style="width: 100%; margin-top: -20px;">
+
+    <div class="container" style="width: 100%; margin-top: -20px;">
         <div id="slides">
             <img src="img/1.jpg" alt="">
             <img src="img/2.jpg" alt="">
@@ -101,90 +102,94 @@
             <img src="img/4.jpg" alt="">
         </div>
     </div>
-    
- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
- <script src="js/jquery.slides.min.js"></script>
-    
-   
-    
-    
-<div class="container" id="about">
-    <h1 class="headers">ABOUT US</h1>
-    <p class="content">
-        H.R. Group of Institutions was established in the year 2005 by the visionary technocrat Er. Anil Agarwal. Initially it started with HR Institute of Technology in 2005 with B.Tech in EC, CS, ME & EEE. Soon after institutes of Pharmacy, Hotel Management and Management were opened in the years 2006-2008 for B.Pharm, BHMCT and PGDM & MBA courses respectively. A new Engg. College in the name of HR Institute of Engg. & Technology was set up in the year 2010. Today the group can boast of more than 2500 students and 200 faculty members.<br>
-        It offers a broad spectrum of courses ranging from B.Tech (CS, EC, ME, CE, EEE, IT), B.Pharm, BHMCT, MBA, MCA, PGDM to  M.Tech (CS) and M.Pharm (Pharmaceutics). M.Tech (ME & ECE), M.Pharm (Pharmaceutical Chemistry and Diploma (Mech. & Civil Engg.) (Second Shift) are likely to start from the next session.The institute has the nicest infrastructure in NCR region. It is situated on National Highway No. 58 within Nagar Nigam limits with very good connectivity with city and Delhi. It has a green lush campus of more than 23 areas, free from pollutions and hustle and bustle of city. 
-    </p>
-</div>
-    <hr>
-    
-<div class="container" id="serv">
-    <h1 class="headers">
-    OUR SERVICES
-    </h1>
-    <br>
-    <div class="row">
-        <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/1.jpg" class="img-responsive"><br>DESIGNING</div>
-        <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/2.jpg" class="img-responsive"><br>DEVELOPMENT</div>
-        <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/3.jpg" class="img-responsive"><br>WORKSHOPS</div>
-        <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/4.jpg" class="img-responsive"><br>EVENTS</div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+
+
+
+
+    <div class="container" id="about">
+        <h1 class="headers">ABOUT US</h1>
+        <p class="content">
+            H.R. Group of Institutions was established in the year 2005 by the visionary technocrat Er. Anil Agarwal. Initially it started with HR Institute of Technology in 2005 with B.Tech in EC, CS, ME & EEE. Soon after institutes of Pharmacy, Hotel Management and Management were opened in the years 2006-2008 for B.Pharm, BHMCT and PGDM & MBA courses respectively. A new Engg. College in the name of HR Institute of Engg. & Technology was set up in the year 2010. Today the group can boast of more than 2500 students and 200 faculty members.<br> It offers a broad spectrum of courses ranging from B.Tech (CS, EC, ME, CE, EEE, IT), B.Pharm, BHMCT, MBA, MCA, PGDM to M.Tech (CS) and M.Pharm (Pharmaceutics). M.Tech (ME & ECE), M.Pharm (Pharmaceutical Chemistry and Diploma (Mech. & Civil Engg.) (Second Shift) are likely to start from the next session.The institute has the nicest infrastructure in NCR region. It is situated on National Highway No. 58 within Nagar Nigam limits with very good connectivity with city and Delhi. It has a green lush campus of more than 23 areas, free from pollutions and hustle and bustle of city.
+        </p>
     </div>
-</div><br><br>
-   <!--FORM-->
+    <hr>
+
+    <div class="container" id="serv">
+        <h1 class="headers">
+            OUR SERVICES
+        </h1>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/1.jpg" class="img-responsive"><br>DESIGNING</div>
+            <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/2.jpg" class="img-responsive"><br>DEVELOPMENT</div>
+            <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/3.jpg" class="img-responsive"><br>WORKSHOPS</div>
+            <div class="col-md-3 col-sm-12 outer" style="text-align: center; font-family: orbitron;"><img src="service/4.jpg" class="img-responsive"><br>EVENTS</div>
+        </div>
+    </div><br><br>
+    <!--FORM-->
     <h1 class="headers">
-CONTACT US
+        CONTACT US
     </h1>
     <div class="container-fluid" style="background: #696969; padding: 5px; color: white;" id="contact">
-        
+
         <div class="row">
             <div class="col-md-5">
                 <h1>FEEDBACK</h1>
-                    <p style="">YOUR FEEDBACK IS IMPORTANT FOR US</p>
+                <p style="">YOUR FEEDBACK IS IMPORTANT FOR US</p>
                 <div class="form-group">
                     <textarea class="form-control" rows="3" placeholder="#feedback"> </textarea>
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="Enter Email">
                 </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-            
-            <div class="col-md-1"><div style="background: black;" class="divider"></div></div>
-            
+
+            <div class="col-md-1">
+                <div style="background: black;" class="divider"></div>
+            </div>
+
             <div class="col-md-6">
-            <h1>GET IN TOUCH</h1><br> 
+                <h1>GET IN TOUCH</h1><br>
                 <h4 class="myh2">L-297,SECTOR-23,SANJAY NAGAR,GHAZIABAD-201002</h4><br>
                 <h4 class="myh2">PHONE NO.&nbsp;-&nbsp;8795646445</h4>
                 <h4 class="myh2">EMAIL&nbsp; -&nbsp;amit0805kumar@gmail.com</h4>
             </div>
         </div>
-    </div> 
+    </div>
     <!--MAP-->
     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d224321.80311688728!2d76.9863793414873!3d28.53887287505997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srajiv+chowk!5e0!3m2!1sen!2sin!4v1515139692863" width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
-    
+
     <!--Footer-->
     <div class="container-fluid" id="footer">
-       <a href="#header" style="text-decoration: none; color: white;"> <button type="button" class="btn-success btn-lg" id="up">UP</button></a>
+        <a href="#header" style="text-decoration: none; color: white;"> <button type="button" class="btn-success btn-lg" id="up">UP</button></a>
         <div style="display: inline-block; font-family: neolatina;">POWERED BY SPARROW <span style="color:#757575; ">CORPORATION</span></div>
 
         <div class="container-fluid foot" id="footicon">
             <a href="#"><i class="fa fa-facebook-square fa-2x face" aria-hidden="true" ></i></a>
             <a href="#"><i class="fa fa-instagram fa-2x face" aria-hidden="true"></i></a>
-            <a href="#" ><i class="fa fa-twitter-square fa-2x face" aria-hidden="true"></i></a>
-        </div><div style="text-align: center; margin-left: 40px;">&copy;AMIT KUMAR</div>
+            <a href="#"><i class="fa fa-twitter-square fa-2x face" aria-hidden="true"></i></a>
+        </div>
+        <div style="text-align: center; margin-left: 40px;">&copy;AMIT KUMAR</div>
     </div>
-<script>
-    	window.onscroll = function() {myFunction()};
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
